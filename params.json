@@ -1,0 +1,22 @@
+{
+    "model_name_or_path": "nvidia/mit-b0",
+    "output_dir": "./segformer_outputs/",
+    "remove_unused_columns": false,
+    "do_train": true,
+    "do_eval": true,
+    "max_steps": 10000,
+    "learning_rate": 0.00006,
+    "lr_scheduler_type": "polynomial",
+    "per_device_train_batch_size": 20,
+    "per_device_eval_batch_size": 20,
+    "logging_strategy": "steps",
+    "logging_steps": 100,
+    "eval_strategy": "epoch",
+    "save_strategy": "epoch",
+    "seed": 42,
+    "local_train_list_file": "train",
+    "local_valid_list_file": "val",
+    "local_test_list_file": "test",
+    "num_train_epochs": 2,
+    "use_cpu": true
+}
